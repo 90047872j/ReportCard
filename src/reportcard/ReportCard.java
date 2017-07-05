@@ -6,18 +6,18 @@ package reportcard;
  */
 public class ReportCard {
 
-    private final String schoolName = "BULLWORTH ACADEMY";
+    private final String SCHOOL_NAME = "BULLWORTH ACADEMY";
     private int studentID;
     private String lastName;
     private String firstName;
     private String currentCourse;
     private String[] subjects;
     private double[] courseGrades;
-
-    public ReportCard() {
+    
+    private ReportCard() {
     }
 
-    public ReportCard(int studentID, String lastName, String firstName, String currentCourse, String[] Subjects, double[] courseGrades) {
+    private ReportCard(int studentID, String lastName, String firstName, String currentCourse, String[] Subjects, double[] courseGrades) {
         this.studentID = studentID;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -75,12 +75,12 @@ public class ReportCard {
     }
 
     public String getSchoolName() {
-        return schoolName;
+        return SCHOOL_NAME;
     }
 
     @Override
     public String toString() {
-        return schoolName + "\n"
+        return SCHOOL_NAME + "\n"
                 + "\nStudent ID: " + studentID + "\n"
                 + "Name: " + getLastName() + ", " + getFirstName() + "\n"
                 + "Grade Level: " + getCurrentCourse() + "\n" + "\nSubjects:\n"
